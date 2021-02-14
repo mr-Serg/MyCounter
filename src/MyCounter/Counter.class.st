@@ -70,3 +70,9 @@ Counter >> initialize [
    super initialize.
    count := 0
 ]
+
+{ #category : #printing }
+Counter >> printOn: aStream [
+  super printOn: aStream. " a Counter "
+  aStream nextPutAll: ' with value: ', count printString.
+]
