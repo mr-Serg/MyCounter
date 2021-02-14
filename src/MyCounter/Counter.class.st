@@ -64,7 +64,7 @@ Counter >> increment [
 count := count + 1
 ]
 
-{ #category : #accessing }
+{ #category : #initialization }
 Counter >> initialize [
 
    super initialize.
