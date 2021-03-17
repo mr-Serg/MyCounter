@@ -43,7 +43,7 @@ Counter class >> startingAt: anInteger [
 { #category : #accessing }
 Counter >> count [ 
 
- ^count
+ ^ count
 ]
 
 { #category : #accessing }
@@ -73,6 +73,7 @@ Counter >> initialize [
 
 { #category : #printing }
 Counter >> printOn: aStream [
-  super printOn: aStream. " a Counter "
-  aStream nextPutAll: ' with value: ', count printString.
+	super printOn: aStream.	" a Counter "
+	aStream nextPutAll: ' with value: '.
+	count printOn: aStream 
 ]
